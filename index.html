@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <h2>Input form</h2>
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div>
+      <label>Gender:</label>
+      <div>
+        <input type="radio" id="genderMale" name="gender" value="male">
+        <label for="genderMale">Male</label>
+        <input type="radio" id="genderFemale" name="gender" value="female">
+        <label for="genderFemale">Female</label>
+        <input type="radio" id="genderOther" name="gender" value="other">
+        <label for="genderOther">Other</label>
+      </div>
+    </div>
+
+    <div>
+      <label for="education">Education:</label>
+      <select id="education" name="education" default="Select Education">
+        <option value="">Select Education</option>
+        <option value="Primary">Primary</option>
+        <option value="Middle">Middle</option>
+        <option value="Secondary">Secondary</option>
+        <option value="Elementary">Elementary</option>
+        <option value="Graduation">Graduation</option>
+        <option value="Master">Master</option>
+        <option value="Doctorate">Doctorate</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Possessions:</label>
+      <div>
+        <input type="checkbox" id="pHouse" name="possessions" value="house">
+        <label for="pHouse">House</label>
+        <input type="checkbox" id="pCar" name="possessions" value="car">
+        <label for="pCar">Car</label>
+        <input type="checkbox" id="pShop" name="possessions" value="shop">
+        <label for="pShop">Shop</label>
+        <input type="checkbox" id="pPlot" name="possessions" value="plot">
+        <label for="pPlot">Plot</label>
+        <input type="checkbox" id="pBusiness" name="possessions" value="business">
+        <label for="pBusiness">Business</label>
+      </div>
+    </div>
+
+    <div id="buttons-wrapper">
+      <button type="button" id="submitButton">Submit</button>
+      <button type="reset" id="resetButton">Reset</button>
+      <button type="button" id="autoFillButton">Auto fill</button>
+    </div>
+  </form>
+
+  <h2>Data</h2>
+
+  <table id="table">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Date of Birth</th>
+      <th>Gender</th>
+      <th>Education</th>
+      <th>Possessions</th>
+    </tr>
+  </table>
+  <script src="main.js"></script>
+</body>
+</html>
